@@ -8,7 +8,7 @@ public class database {
     public static Connection connectDB(){
         try {
 
-           Class.forName("com.mysql.jdbc.Drive");
+           Class.forName("com.mysql.jdbc.Driver");
 
            Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/real estate");
            return connect;

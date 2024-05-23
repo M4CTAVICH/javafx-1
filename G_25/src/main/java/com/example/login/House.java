@@ -1,9 +1,11 @@
+package com.example.login;
+
 public class House {
     private String type;
-    private double price;
+    private String price;
     private String address;
 
-    public House(String type, double price, String address) {
+    public House(String type, String price, String address) {
         this.type = type;
         this.price = price;
         this.address = address;
@@ -17,11 +19,11 @@ public class House {
         this.type = type;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
