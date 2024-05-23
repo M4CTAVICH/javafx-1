@@ -243,8 +243,8 @@ public class mainformcontroller implements Initializable {
             String address = adress_txt.getText();
             String client = Client_txt.getText();
             String date = date_txt.getText();
-            String status = "sold"; // You may need to retrieve this from a ComboBox
-            String availability = "available"; // You may need to retrieve this from a ComboBox
+            String status = Status_c.getSelectionModel().getSelectedItem();
+            String availability = Contract_c.getSelectionModel().getSelectedItem();
 
             Contract newContract = new Contract(address, client, date, status, availability);
             contractData.add(newContract);
